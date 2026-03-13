@@ -1,0 +1,24 @@
+{
+    "DESIGN_NAME": "pipeline",
+    "VERILOG_FILES": [
+        "dir::src/alu.sv",
+        "dir::src/regfile.sv",
+        "dir::src/imm_gen.sv",
+        "dir::src/decoder.sv",
+        "dir::src/hazard_unit.sv",
+        "dir::src/forward_unit.sv",
+        "dir::src/icache.sv",
+        "dir::src/dcache.sv",
+        "dir::src/bht.sv",
+        "dir::src/pipeline.sv"
+    ],
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 25.0,
+    "PDK": "sky130A",
+    "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+    "DIE_AREA": "0 0 1200 1200",
+    "FP_CORE_UTIL": 35,
+    "SYNTH_STRATEGY": "DELAY 0",
+    "VERILATOR_LINT_ARGS": "--no-warn-UNUSEDSIGNAL --no-warn-UNDRIVEN",
+    "PL_TARGET_DENSITY_PCT": 40
+}
